@@ -62,11 +62,6 @@ function updateTodo(){
     renderTodo(allTodo)
 }
 
-
-
-
-
-
 function searchToDo(){
     let searchText = searchInput.value.trim().toLowerCase();
     let filteredTodos = allTodo.filter(todo =>
@@ -87,7 +82,7 @@ function completeTodo(todo){
 }
 
 function removeTodo(index) {
-    allTodo = allTodo.filter((_,i)=>i !== index)
+    allTodo = allTodo.filter((_, i)=>i !== index)
 
     saveTodo()
     updateTodo()
