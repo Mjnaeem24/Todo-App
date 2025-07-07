@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc ;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 150px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #005fcc;
+}
+
+
+/* form style */
+.form p {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 16px;
+}
+.input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Todo list styles */
+.todoUL {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.todoUL li {
+  background-color: #f5faff;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #0077ff;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.todoUL li.complete{
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
